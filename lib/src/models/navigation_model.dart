@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
+import 'package:heroicons/heroicons.dart';
 
 class NavigationItemModel {
   final String label;
-  final IconData icon;
-  final IconData activeIcon;
+  final HeroIcons icon;
+  final HeroIcons activeIcon;
 
   const NavigationItemModel({
     required this.label,

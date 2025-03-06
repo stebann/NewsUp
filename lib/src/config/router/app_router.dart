@@ -37,18 +37,18 @@ final GoRouter router = GoRouter(
         StatefulShellBranch(
           routes: [
             GoRoute(
-              path: '/profile',
-              name: RouteNames.profile,
-              builder: (context, state) => const ProfileScreen(),
+              path: '/save',
+              name: RouteNames.save,
+              builder: (context, state) => const SaveScreen(),
             ),
           ],
         ),
         StatefulShellBranch(
           routes: [
             GoRoute(
-              path: '/save',
-              name: RouteNames.save,
-              builder: (context, state) => const SaveScreen(),
+              path: '/profile',
+              name: RouteNames.profile,
+              builder: (context, state) => const ProfileScreen(),
             ),
           ],
         ),

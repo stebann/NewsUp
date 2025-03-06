@@ -5,6 +5,10 @@ class SaveScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(title: Text('Save Screen')),
+      body: Center(child: Text('Save Screen')),
+    );
   }
 }

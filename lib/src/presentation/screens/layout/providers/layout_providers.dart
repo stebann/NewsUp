@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:newsapp/src/models/navigation_model.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:heroicons/heroicons.dart';
 
 part 'layout_providers.g.dart';
 
@@ -10,23 +10,23 @@ List<NavigationItemModel> navigationItems(Ref ref) {
   return [
     const NavigationItemModel(
       label: 'Home',
-      icon: Icons.home_outlined,
-      activeIcon: Icons.home_filled,
+      icon: HeroIcons.home,
+      activeIcon: HeroIcons.home,
     ),
     const NavigationItemModel(
       label: 'Discover',
-      icon: Icons.explore_outlined,
-      activeIcon: Icons.explore,
+      icon: HeroIcons.newspaper,
+      activeIcon: HeroIcons.newspaper,
     ),
     const NavigationItemModel(
       label: 'Save',
-      icon: Icons.favorite_outline,
-      activeIcon: Icons.favorite,
+      icon: HeroIcons.bookmark,
+      activeIcon: HeroIcons.bookmark,
     ),
     const NavigationItemModel(
       label: 'Profile',
-      icon: Icons.favorite_outline,
-      activeIcon: Icons.favorite,
+      icon: HeroIcons.userCircle,
+      activeIcon: HeroIcons.userCircle,
     ),
   ];
 }
