@@ -23,6 +23,6 @@ NewsUp es una aplicación de noticias moderna desarrollada con Flutter que permi
 
 ## 👨‍💻 Desarrollador
 
-- **[Tu Nombre]**
-  - GitHub: [@TuUsuario](https://github.com/TuUsuario)
-  - LinkedIn: [TuPerfil](https://linkedin.com/in/TuPerfil)
+- **Esteban Ramirez**
+   - GitHub: [@stebann](https://github.com/stebann)
+   - LinkedIn: [estebanrramirezm](https://linkedin.com/in/estebanrramirezm)
