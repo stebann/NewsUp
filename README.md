@@ -11,10 +11,10 @@ NewsUp es una aplicación de noticias moderna desarrollada con Flutter que permi
 
 <p float="left">
   <img src="assets\github-screenshots\news-photo-1.png" width="200" />
-  <img src="assets\github-screenshots\news-photo-5.png" width="200" />
+  <img src="assets\github-screenshots\news-photo-2.png" width="200" />
   <img src="assets\github-screenshots\news-photo-3.png" width="200" />
   <img src="assets\github-screenshots\news-photo-4.png" width="200" />
-  <img src="assets\github-screenshots\news-photo-2.png" width="200" />
+  <img src="assets\github-screenshots\news-photo-5.png" width="200" />
 </p>
 
 ## 🛠️ Tecnologías Utilizadas
