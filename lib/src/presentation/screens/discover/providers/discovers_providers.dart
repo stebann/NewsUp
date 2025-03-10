@@ -13,8 +13,7 @@ List<NewsCategoryEnum> categoryTabs(Ref ref) {
 
 @riverpod
 List<NewsModel> filteredNews(Ref ref, NewsCategoryEnum category) {
-  final allNews =
-      ref.watch(treandingNewsProvider) + ref.watch(latestNewsListProvider);
+  final allNews = ref.watch(treandingNewsProvider);
 
   if (category == NewsCategoryEnum.all) {
     return allNews;

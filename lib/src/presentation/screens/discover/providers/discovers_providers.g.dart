@@ -25,7 +25,7 @@ final categoryTabsProvider =
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef CategoryTabsRef = AutoDisposeProviderRef<List<NewsCategoryEnum>>;
-String _$filteredNewsHash() => r'31d4765cb6f4714111ab9e5564ed060de2c9b150';
+String _$filteredNewsHash() => r'c70b28339e9b0be6a8162a20650f62e5e607c04c';
 
 /// Copied from Dart SDK
 class _SystemHash {

@@ -1,3 +1,5 @@
+import 'package:newsapp/src/models/news_model.dart';
+
 import 'route_names.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -53,6 +55,16 @@ final GoRouter router = GoRouter(
           ],
         ),
       ],
+    ),
+
+    GoRoute(
+      path: '/detail',
+      name: RouteNames.detail,
+      builder: (context, state) {
+        final news = state.extra as NewsModel;
+
+        return DetailScreen(news: news);
+      },
     ),
   ],
 );

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:newsapp/src/config/router/route_names.dart';
 import 'package:newsapp/src/enums/news_category_enum.dart';
 import 'package:newsapp/src/models/news_model.dart';
 
@@ -43,13 +46,14 @@ class NewsItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 150,
-      decoration: const BoxDecoration(color: Colors.transparent),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          if (news.imageUrl.isNotEmpty)
+    return GestureDetector(
+      onTap: () => context.pushNamed(RouteNames.detail, extra: news),
+      child: Container(
+        height: 150,
+        decoration: const BoxDecoration(color: Colors.transparent),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
             ClipRRect(
               borderRadius: const BorderRadius.all(Radius.circular(8)),
               child: Container(
@@ -64,71 +68,75 @@ class NewsItem extends StatelessWidget {
               ),
             ),
 
-          const SizedBox(width: 12),
+            const SizedBox(width: 12),
 
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        news.category.name[0].toUpperCase() +
-                            news.category.name.substring(1),
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.blue[700],
-                          fontWeight: FontWeight.bold,
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          news.category.name[0].toUpperCase() +
+                              news.category.name.substring(1),
+                          style: GoogleFonts.merriweather(
+                            fontSize: 12,
+                            color: Colors.blue[700],
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
 
-                      GestureDetector(
-                        onTap: () {},
-                        child: const Padding(
-                          padding: EdgeInsets.all(4),
-                          child: Icon(Icons.more_vert, size: 20),
+                        GestureDetector(
+                          onTap: () {},
+                          child: const Padding(
+                            padding: EdgeInsets.all(4),
+                            child: Icon(Icons.more_vert, size: 20),
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-
-                  Text(
-                    news.title,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+                      ],
                     ),
-                    maxLines: 3,
-                    overflow: TextOverflow.ellipsis,
-                  ),
 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        news.author,
-                        style: TextStyle(
-                          fontSize: 10,
-                          color: Colors.grey[700],
-                          fontStyle: FontStyle.italic,
+                    Text(
+                      news.title,
+                      style: GoogleFonts.merriweather(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          news.author,
+                          style: GoogleFonts.merriweather(
+                            fontSize: 10,
+                            color: Colors.grey[700],
+                            fontStyle: FontStyle.italic,
+                          ),
                         ),
-                      ),
 
-                      Text(
-                        news.date,
-                        style: TextStyle(fontSize: 10, color: Colors.grey[700]),
-                      ),
-                    ],
-                  ),
-                ],
+                        Text(
+                          news.date,
+                          style: GoogleFonts.merriweather(
+                            fontSize: 10,
+                            color: Colors.grey[700],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

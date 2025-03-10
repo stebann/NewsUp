@@ -5,4 +5,6 @@ class RouteNames {
   static const String discover = 'nav.discover';
   static const String save = 'nav.save';
   static const String profile = 'nav.profile';
+
+  static const String detail = 'detail';
 }
