@@ -1,16 +1,29 @@
-# newsapp
+# NewsUp 📰
 
-A new Flutter project.
+NewsUp es una aplicación de noticias moderna desarrollada con Flutter que permite a los usuarios mantenerse informados con las últimas noticias de diversas categorías. Ofrece una experiencia intuitiva para explorar, guardar favoritos y recibir actualizaciones en tiempo real.
 
-## Getting Started
+> ⚠️ **Nota**: Este proyecto es un prototipo/mockup diseñado con fines demostrativos y educativos.
 
-This project is a starting point for a Flutter application.
+## 🎨 Inspiración de Diseño
+[News Mobile App - Dribbble](https://dribbble.com/shots/25403026-News-Mobile-App)
 
-A few resources to get you started if this is your first Flutter project:
+## 📱 Capturas de Pantalla
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<p float="left">
+  <img src="assets\github-screenshots\news-photo-1.png" width="200" />
+  <img src="assets\github-screenshots\news-photo-2.png" width="200" />
+  <img src="assets\github-screenshots\news-photo-3.png" width="200" />
+  <img src="assets\github-screenshots\news-photo-4.png" width="200" />
+  <img src="assets\github-screenshots\news-photo-5.png" width="200" />
+  <img src="assets\github-screenshots\news-photo-6.png" width="200" />
+</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tecnologías Utilizadas
+- Flutter
+- Dart
+
+## 👨‍💻 Desarrollador
+
+- **[Tu Nombre]**
+  - GitHub: [@TuUsuario](https://github.com/TuUsuario)
+  - LinkedIn: [TuPerfil](https://linkedin.com/in/TuPerfil)
