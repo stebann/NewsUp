@@ -1,8 +1,9 @@
-# NewsUp 📰
+# Flutter UI/UX Practice — News App
 
-NewsUp es una aplicación de noticias moderna desarrollada con Flutter que permite a los usuarios mantenerse informados con las últimas noticias de diversas categorías. Ofrece una experiencia intuitiva para explorar, guardar favoritos y recibir actualizaciones en tiempo real.
+Este proyecto forma parte de una serie de prácticas de diseño UI/UX utilizando Flutter.  
+El objetivo es replicar interfaces reales para fortalecer habilidades de desarrollo y diseño de aplicaciones móviles.
 
-> ⚠️ **Nota**: Este proyecto es un prototipo/mockup diseñado con fines demostrativos y educativos.
+> ⚠️ **Nota**: Este proyecto es un prototipo/mockup realizado con fines educativos y demostrativos.
 
 ## 🎨 Inspiración de Diseño
 [News Mobile App - Dribbble](https://dribbble.com/shots/25403026-News-Mobile-App)
@@ -10,11 +11,11 @@ NewsUp es una aplicación de noticias moderna desarrollada con Flutter que permi
 ## 📱 Capturas de Pantalla
 
 <p float="left">
-  <img src="assets\github-screenshots\news-photo-1.png" width="200" />
-  <img src="assets\github-screenshots\news-photo-2.png" width="200" />
-  <img src="assets\github-screenshots\news-photo-3.png" width="200" />
-  <img src="assets\github-screenshots\news-photo-4.png" width="200" />
-  <img src="assets\github-screenshots\news-photo-5.png" width="200" />
+  <img src="assets/github-screenshots/news-photo-1.png" width="200" />
+  <img src="assets/github-screenshots/news-photo-2.png" width="200" />
+  <img src="assets/github-screenshots/news-photo-3.png" width="200" />
+  <img src="assets/github-screenshots/news-photo-4.png" width="200" />
+  <img src="assets/github-screenshots/news-photo-5.png" width="200" />
 </p>
 
 ## 🛠️ Tecnologías Utilizadas
@@ -24,5 +25,5 @@ NewsUp es una aplicación de noticias moderna desarrollada con Flutter que permi
 ## 👨‍💻 Desarrollador
 
 - **Esteban Ramirez**
-   - GitHub: [@stebann](https://github.com/stebann)
-   - LinkedIn: [estebanrramirezm](https://linkedin.com/in/estebanrramirezm)
+  - GitHub: [@stebann](https://github.com/stebann)
+  - LinkedIn: [estebanrramirezm](https://linkedin.com/in/estebanrramirezm)
